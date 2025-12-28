@@ -7,6 +7,19 @@
 		"abi": [
 			{
 				"inputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "balanceReceived",
 				"outputs": [
 					{
@@ -19,44 +32,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "deposit",
-				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getContractBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "withdrawAll",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address payable",
-						"name": "to",
-						"type": "address"
-					}
-				],
-				"name": "withdrawToAddress",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -72,7 +49,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SendMoney.sol": "SendWithdrawMoney"
+			"contracts/ExampleSendTransfer.sol": "ReceiverAction"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -86,12 +63,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SendMoney.sol": {
-			"keccak256": "0xe1b939ce65c037b6ed25e3910b1b52b252b201baebcb0f7edf4ac6967f9a42ec",
+		"contracts/ExampleSendTransfer.sol": {
+			"keccak256": "0x970aa8dabb2795aded797f06d4e23216983fd6da5032ea3517f8bfc0a798ba5c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ef79b102dd43af0534e1213d11f89da1aa8df2931525c83bdac8d8bfbcc3e790",
-				"dweb:/ipfs/QmfDNQL4TrV7XKsBktWn8nAyKaL5wPiKG9wUeyNBRsApK9"
+				"bzz-raw://5b3824abe5b8af2f00b9faf1373a178a4734df52bf12fa6139363bcafb6d1682",
+				"dweb:/ipfs/QmanpBM87DtgsXTJuyQhioBH3rMb6YA2525hXdXddXKmsX"
 			]
 		}
 	},

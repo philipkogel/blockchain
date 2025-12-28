@@ -6,12 +6,28 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "balanceReceived",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "totalBalance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numberOfDeposits",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numberOfWithdrawls",
 						"type": "uint256"
 					}
 				],
@@ -20,40 +36,25 @@
 			},
 			{
 				"inputs": [],
-				"name": "deposit",
+				"name": "despositMoney",
 				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getContractBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "withdrawAll",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "address payable",
-						"name": "to",
+						"name": "_to",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
 					}
 				],
-				"name": "withdrawToAddress",
+				"name": "withdrawMoney",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -72,7 +73,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SendMoney.sol": "SendWithdrawMoney"
+			"contracts/ExampleMappingStruct.sol": "WalletWithStructMapping"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -86,12 +87,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SendMoney.sol": {
-			"keccak256": "0xe1b939ce65c037b6ed25e3910b1b52b252b201baebcb0f7edf4ac6967f9a42ec",
+		"contracts/ExampleMappingStruct.sol": {
+			"keccak256": "0x39a67ba2cbaaa11f54c77a07b3b05c256eda5fa8594172edcbbc3d7a87071661",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ef79b102dd43af0534e1213d11f89da1aa8df2931525c83bdac8d8bfbcc3e790",
-				"dweb:/ipfs/QmfDNQL4TrV7XKsBktWn8nAyKaL5wPiKG9wUeyNBRsApK9"
+				"bzz-raw://52c802768becc59cfd3745d9e809c48d49bf11dd29df34362e45131ffb31bb78",
+				"dweb:/ipfs/QmYAyfH5Mr2ARqBf8aHuc9FzvBuRnXAcjQh9g6oumjsbZy"
 			]
 		}
 	},
