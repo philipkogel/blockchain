@@ -1,0 +1,17 @@
+# Solidity/Hardhat/Foundry/Remix
+artifacts/
+cache/
+coverage/
+typechain-types/
+.deps/
+.states/
+remix-states/
+
+# Hardhat
+.cache/
+hardhat.config.ts  # If it contains private keys!
+
+# Foundry
+cache/
+out/
+target/
